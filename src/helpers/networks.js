@@ -1,27 +1,22 @@
 export const networkConfigs = {
   "0x1": {
-    chainName: "Ethereum",
     currencySymbol: "ETH",
     blockExplorerUrl: "https://etherscan.io/",
     wrapped: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
   },
   "0x3": {
-    chainName: "Ethereum",
     currencySymbol: "ETH",
     blockExplorerUrl: "https://ropsten.etherscan.io/",
   },
   "0x4": {
-    chainName: "Ethereum",
     currencySymbol: "ETH",
     blockExplorerUrl: "https://rinkeby.etherscan.io/",
   },
   "0x2a": {
-    chainName: "Ethereum",
     currencySymbol: "ETH",
     blockExplorerUrl: "https://kovan.etherscan.io/",
   },
   "0x5": {
-    chainName: "Ethereum",
     currencySymbol: "ETH",
     blockExplorerUrl: "https://goerli.etherscan.io/",
   },
@@ -41,7 +36,7 @@ export const networkConfigs = {
   },
   "0x38": {
     chainId: 56,
-    chainName: "Binance Smart Chain",
+    chainName: "Smart Chain",
     currencyName: "BNB",
     currencySymbol: "BNB",
     rpcUrl: "https://bsc-dataseed.binance.org/",
@@ -50,7 +45,7 @@ export const networkConfigs = {
   },
   "0x61": {
     chainId: 97,
-    chainName: "Binance Smart Chain - Testnet",
+    chainName: "Smart Chain - Testnet",
     currencyName: "BNB",
     currencySymbol: "BNB",
     rpcUrl: "https://data-seed-prebsc-1-s1.binance.org:8545/",
@@ -76,10 +71,7 @@ export const networkConfigs = {
 };
 
 export const getNativeByChain = (chain) =>
-  networkConfigs[chain]?.currencySymbol || "Native";
-
-export const getNetworkByChain = (chain) =>
-  networkConfigs[chain]?.chainName || "Unknown";
+  networkConfigs[chain]?.currencySymbol || "NATIVE";
 
 export const getChainById = (chain) => networkConfigs[chain]?.chainId || null;
 
