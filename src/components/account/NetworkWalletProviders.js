@@ -10,9 +10,9 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import WalletConnect from "../../assets/images/wallet-logos/WalletConnect.svg";
-import MetaMask from "../../assets/images/wallet-logos/MetaMask.svg";
-import TrustWallet from "../../assets/images/wallet-logos/TrustWallet.svg";
+import WalletConnect from "../../assets/images/wallet-logos/walletconnect.svg";
+import MetaMask from "../../assets/images/wallet-logos/metamask.svg";
+import TrustWallet from "../../assets/images/wallet-logos/trustwallet.svg";
 import Avatar from "@mui/material/Avatar";
 
 const wallets = [

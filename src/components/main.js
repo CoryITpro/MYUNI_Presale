@@ -7,7 +7,7 @@ import mainAbi from "../helpers/contact.json";
 import { GetContract } from "../helpers/Contract";
 import Account from "./account";
 
-import busdLogo from "../assets/images/BUSD.png";
+import busdLogo from "../assets/images/busd.png";
 import logo from "../assets/images/logo.png";
 
 import {
