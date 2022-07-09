@@ -4,7 +4,7 @@ import AccountDetails from "./AccountDetails";
 import { getEllipsisTxt } from "../../helpers/formatters";
 import { ethers } from "ethers";
 
-const Authenticated = ({ library, account }) => {
+const Authenticated = ({ library, account, width, color, hoverColor }) => {
     const [balance, setBalance] = useState();
     const [chainId, setChainId] = useState(0);
     const [accountDetailsDialogOpen, setAccountDetailsDialogOpen] = useState(false);
@@ -37,7 +37,13 @@ const Authenticated = ({ library, account }) => {
             <Chip
                 label={getEllipsisTxt(account, 6)}
                 onClick={handleAccountDetailsDialogToggle}
-                sx={{ fontWeight: 700, backgroundColor: "#791EDB", color: "white", "&:hover": { backgroundColor: "#F84FED" } }}
+                sx={{
+                    width: width,
+                    fontWeight: 700,
+                    backgroundColor: color,
+                    color: "white",
+                    "&:hover": { backgroundColor: hoverColor },
+                }}
             />
             <AccountDetails
                 accountDetailsDialogOpen={accountDetailsDialogOpen}

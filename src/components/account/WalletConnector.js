@@ -13,6 +13,43 @@ let provider = null;
 let walletconnect, injected, bsc;
 
 // const net = {
+//     chaind: 1,
+//     rpcurl: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+//     blockurl: "https://etherscan.io",
+//     chainname: "Ethereum Mainnet",
+//     chainnetname: "Ethereum Mainnet",
+//     chainsymbol: "ETH",
+//     chaindecimals: 18,
+// };
+// const net = {
+//     chaind: 56,
+//     rpcurl: "https://bsc-dataseed1.ninicoin.io",
+//     blockurl: "https://bscscan.com/",
+//     chainname: "Binance Smart Chain Mainnet",
+//     chainnetname: "Binance Smart Chain Mainnet",
+//     chainsymbol: "BNB",
+//     chaindecimals: 18,
+// };
+const net = {
+    chaind: 42,
+    rpcurl: "https://kovan.poa.network",
+    blockurl: "https://kovan.etherscan.io/",
+    chainname: "Binance Smart Chain Mainnet",
+    chainnetname: "Binance Smart Chain Mainnet",
+    chainsymbol: "ETH",
+    chaindecimals: 18,
+};
+
+// const net = {
+//     chaind: 4,
+//     rpcurl: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+//     blockurl: "https://rinkey.etherscan.io",
+//     chainname: "Ethereum Rinkeby Testnet",
+//     chainnetname: "Ethereum Rinkeby Testnet",
+//     chainsymbol: "ETH",
+//     chaindecimals: 18,
+// };
+// const net = {
 //     chaind: 97,
 //     rpcurl: "https://data-seed-prebsc-1-s1.binance.org:8545/",
 //     blockurl: "https://testnet.bscscan.com/",
@@ -21,16 +58,6 @@ let walletconnect, injected, bsc;
 //     chainsymbol: "BNB",
 //     chaindecimals: 18,
 // };
-const net = {
-    chaind: 56,
-    rpcurl: "https://bsc-dataseed1.ninicoin.io",
-    blockurl: "https://bscscan.com/",
-    chainname: "Binance Smart Chain Mainnet",
-    chainnetname: "Binance Smart Chain Mainnet",
-    chainsymbol: "BNB",
-    chaindecimals: 18,
-};
-
 const defaultethereumconflag = {
     testing: false,
     autoGasMultiplier: 1.5,

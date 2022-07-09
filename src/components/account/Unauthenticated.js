@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import Button from "@mui/material/Button";
 import WalletProviders from "./NetworkWalletProviders";
 
-const Unauthenticated = () => {
+const Unauthenticated = (props) => {
     const [walletProvidersDialogOpen, setWalletProvidersDialogOpen] = useState(false);
 
     const handleWalletProvidersDialogToggle = () => {
@@ -14,14 +14,14 @@ const Unauthenticated = () => {
             <Button
                 variant="contained"
                 disableElevation
-                fullWidth
                 onClick={handleWalletProvidersDialogToggle}
                 sx={{
+                    width: props.width,
                     borderRadius: 25,
                     fontSize: "0.8rem",
                     boxShadow: "rgb(0 0 0 / 8%) 0px 8px 28px",
-                    backgroundColor: "#791EDB",
-                    "&:hover": { backgroundColor: "#F84FED" },
+                    backgroundColor: props.color,
+                    "&:hover": { backgroundColor: props.hoverColor },
                 }}
             >
                 Connect Wallet

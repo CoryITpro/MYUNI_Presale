@@ -41,21 +41,13 @@ const WalletProviders = ({ walletProvidersDialogOpen, handleWalletProvidersDialo
     });
 
     const connectWallet = async (walletprovider) => {
-        if (walletprovider === "injected_eth") {
-            setNet(0);
-            window.localStorage.setItem("wallet", "injected_eth");
+        if (walletprovider === "injected") {
+            setNet();
+            window.localStorage.setItem("wallet", "injected");
             loginMetamask();
-        } else if (walletprovider === "walletconnect_eth") {
-            window.localStorage.setItem("wallet", "walletconnect_eth");
-            setNet(0);
-            loginWalletConnect();
-        } else if (walletprovider === "injected_bsc") {
-            setNet(1);
-            window.localStorage.setItem("wallet", "walletconnect_eth");
-            loginMetamask();
-        } else if (walletprovider === "walletconnect_bsc") {
-            setNet(1);
-            window.localStorage.setItem("wallet", "walletconnect_bsc");
+        } else if (walletprovider === "walletconnect") {
+            window.localStorage.setItem("wallet", "walletconnect");
+            setNet();
             loginWalletConnect();
         }
     };
